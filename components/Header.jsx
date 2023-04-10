@@ -15,6 +15,7 @@ const Header = () => {
                     <li className='ml-2 mr-2 cursor-pointer hover:underline'>Home</li>
                     <li className='ml-2 mr-2 cursor-pointer hover:underline'>Categories</li>
                     <li className='ml-2 mr-2 cursor-pointer hover:underline'>Authors</li>
+                    <li className='ml-2 mr-2 cursor-pointer hover:underline'>All Books</li>
                 </ul>
             </div>
 
