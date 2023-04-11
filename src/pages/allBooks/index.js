@@ -9,6 +9,7 @@ export const AllBooksPage = ({ books }) => {
       {books.map(({ author, _id, bookTitle, description, createdAt }) => (
         <ItemBook
           key={_id}
+          id={_id}
           bookTitle={bookTitle}
           description={description}
           author={author}

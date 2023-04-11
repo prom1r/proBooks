@@ -1,10 +1,11 @@
 import React from 'react'
 import { Card, Col, Text } from '@nextui-org/react'
+import Link from 'next/link'
 
-export const ItemBook = ({ author, bookTitle, description, createdAt }) => {
+export const ItemBook = ({ author, bookTitle, description, createdAt, id }) => {
 
   return (
-    <div className='p-10'>
+    <Link className='p-10' href="/allBooks/[id]" as={`/allBooks/${id}`}>
       <Card css={{ bg: "$black", w: "200px" }}>
         <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
           <Col>
@@ -32,7 +33,7 @@ export const ItemBook = ({ author, bookTitle, description, createdAt }) => {
           alt="Card image background"
         />
       </Card>
-    </div>
+    </Link>
   )
 }
 export default ItemBook
